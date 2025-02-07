@@ -27,12 +27,11 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
+
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+
 
     <!-- header-start -->
     <header>
@@ -98,6 +97,8 @@
             </div>
         </div>
     </div>
+   
+    
     <!-- slider_area_end -->
      <style>
 
@@ -159,31 +160,109 @@
         transform: translateY(0);
     }
 }
+body{
+    background-color: black;
+}
+</style>
 
-
-
-     </style>
-
-    <!-- performar_area_start  -->
-    <div class="performar_area black_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title mb-80">
-                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Discord</h3>
+<section style="display: flex; background-color: #000000; justify-content: center; height: 100vh; margin-bottom: 50px;">
+    <!-- Discord Section (metade esquerda) -->
+    <div class="discord" style=" border-radius: 10%; background-color: rgba(0, 0, 0, 0); display: flex; flex-direction: column; justify-content: center; align-items: center;  padding-left: 50px;">
+        <div class="performar_area black_bg" style=" background-color: #3a0f0f; border-radius: 10%; display: flex; justify-content: center;">
+            <div class="container" style="margin: 50px;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section_title mb-80">
+                            <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">Discord</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-lg-8">
-                    <div class="row">
-                        <iframe src="https://ptb.discord.com/widget?id=1311449946544803860&theme=dark" width="350" height="450" style="margin-right: 50px;" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <div class="row text-center">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <iframe src="https://ptb.discord.com/widget?id=1311449946544803860&theme=dark" width="350" height="450" style="margin-right: 50px;" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- Redes Sociais Section (metade direita) -->
+    <div style="margin: 10px; border-radius: 10%; width: 30%; background-color: rgba(105, 70, 70, 0.411); display: flex; flex-direction: column; justify-content: center; align-items: center; padding-right: 50px;">
+        <h3 style="color: white; text-align: center; margin-bottom: 20px;">Redes Sociais</h3>
+        <!-- Instagram -->
+        <div class="media contact-info" style="text-align: center; margin-bottom: 20px;">
+            <span class="contact-info__icon">
+                <a href="https://www.instagram.com/codifyworld" target="_blank" style="color: #E1306C;">
+                    <i class="ti-instagram"></i>
+                </a>
+            </span>
+            <div class="media-body">
+                <h3 style="color: rgb(236, 142, 27);">Instagram</h3>
+            </div>
+        </div>
+        <!-- GitHub -->
+        <div class="media contact-info" style="text-align: center;">
+            <span class="contact-info__icon">
+                <a href="https://github.com/codifyworldservices" target="_blank" style="color: #FFFFFF;">
+                    <i class="ti-github"></i>
+                </a>
+            </span>
+            <div class="media-body">
+                <h3 style="color: rgb(83, 15, 231);">GitHub</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Responsividade -->
+<style>
+    @media (max-width: 768px) {
+        section {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+        
+        
+
+        div[style*="width: 100%"] {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        .media {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-bottom: 15px;
+        }
+
+        /* Ajustando a div do Discord para ocupar a largura total */
+        div[style*="background-color: rgba(42, 35, 35, 0.411); display: flex; flex-direction: column; justify-content: center; align-items: center; width: 50%; padding-left: 50px;"] {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        iframe {
+            width: 100%; /* A largura do iframe ocupa 100% da largura disponível */
+            height: 400px; /* Ajuste a altura se necessário */
+        }
+    }
+</style>
+
+
+
     <style>
         /* Centraliza o conteúdo vertical e horizontalmente */
 .performar_area {
@@ -203,8 +282,9 @@
     </style>
     <!-- performar_area_end  -->
 
+
     <!-- about_area_start  -->
-    <div class="about_area black_bg">
+    <div class="about_area black_bg ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -323,7 +403,6 @@
                                 <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">Evento onde se reunirão os melhores programadores em busda de um objetivo em comum.</p>
                                 <a href="elements.html"  class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Saber mais</a>
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGMI2ztDyKyvCplo58yOSoj4Y7uQfYUK9aw8FgF6NIwdyxdw/viewform?usp=dialog" target="_blank" class="boxed-btn3 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">Participar agora</a>
-
                             </div>
                         </div>
                     </div>
