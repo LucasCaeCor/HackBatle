@@ -201,44 +201,46 @@
       }
     </style>
 
-    <section
-      style="
-        display: flex;
-        background-color: #000;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        gap: 50px;
-        padding: 20px;
-      "
-    >
-      <!-- Discord Section -->
-      <div
-        style="
-          background-color: #3a0f0f;
-          border-radius: 20px;
-          padding: 40px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 400px;
-        "
-      >
-        <h3 style="color: white; font-size: 32px; margin-bottom: 20px">
-          Discord
-        </h3>
-        <iframe
-          src="https://ptb.discord.com/widget?id=1311449946544803860&theme=dark"
-          width="350"
-          height="350"
-          style="border-radius: 10px; border: none"
-          allowtransparency="true"
-          frameborder="0"
-          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-        ></iframe>
-      </div>
+<section
+style="
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+  padding: 20px;
+"
+>
+  <!-- Discord Section -->
+  <div
+  style="
+    background-color: #3a0f0f;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 400px;
+  "
+>
+  <h3 style="color: white; font-size: 28px; margin-bottom: 20px">
+    Discord
+  </h3>
+  <iframe
+    src="https://ptb.discord.com/widget?id=1311449946544803860&theme=dark"
+    width="100%"
+    height="300"
+    style="border-radius: 10px; border: none"
+    allowtransparency="true"
+    frameborder="0"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+  ></iframe>
+</div>
 
-      <!-- Redes Sociais Section -->
+<!-- Redes Sociais Section -->
       <div
         style="
           background-color: rgba(105, 70, 70, 0.6);
@@ -248,7 +250,7 @@
           flex-direction: column;
           align-items: center;
           width: 400px;
-          height: 480px;
+          height: 435px;
           justify-content: center;
         "
       >
@@ -308,64 +310,8 @@
       </div>
     </section>
 
-    <!-- Responsividade -->
-    <style>
-      @media (max-width: 768px) {
-        section {
-          flex-direction: column;
-          align-items: center;
-          height: auto;
-        }
+<!-- Responsividade -->
 
-        div[style*="width: 100%"] {
-          width: 100%;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-
-        iframe {
-          width: 100%;
-          height: 300px;
-        }
-
-        .media {
-          margin-bottom: 20px;
-        }
-
-        h3 {
-          margin-bottom: 15px;
-        }
-
-        /* Ajustando a div do Discord para ocupar a largura total */
-        div[style*="background-color: rgba(42, 35, 35, 0.411); display: flex; flex-direction: column; justify-content: center; align-items: center; width: 50%; padding-left: 50px;"] {
-          width: 100%;
-          padding-left: 0;
-        }
-
-        iframe {
-          width: 100%; /* A largura do iframe ocupa 100% da largura disponível */
-          height: 400px; /* Ajuste a altura se necessário */
-        }
-      }
-    </style>
-
-    <style>
-      /* Centraliza o conteúdo vertical e horizontalmente */
-      .performar_area {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; /* Ocupa toda a altura da tela */
-        background-color: #000; /* Cor de fundo preta */
-      }
-
-      /* Ajuste do iframe para ficar centrado */
-      .performar_area iframe {
-        margin: 0 auto; /* Centraliza o iframe dentro da coluna */
-        display: block;
-      }
-    </style>
-    <!-- performar_area_end  -->
 
     <!-- about_area_start  -->
     <div class="about_area black_bg">
