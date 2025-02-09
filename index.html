@@ -81,13 +81,14 @@
             <div class="col-xl-12">
               <div class="slider_text text-center">
                 <img
-                  class="wow fadeInLeft"
+                  class="wow fadeInLeft" class="imagem"
                   data-wow-duration="1s"
                   data-wow-delay=".3s"
                   src="img/hacklogo.png"
                   
                   alt=""
                 />
+                
                 <span
                   class="wow fadeInRight"
                   data-wow-duration="1s"
@@ -110,6 +111,7 @@
                 </h3>
 
                 <style>
+
                   @keyframes colorCycle {
                     0% {
                       color: red;
@@ -150,6 +152,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: 1s;
+      }
+
+
+      .slider_text:hover{
+        transform: scale(0.9);
+        transition: 1s;
       }
 
       /* Ajuste das imagens e textos */
@@ -173,34 +182,6 @@
         animation: ghostFluorescent 4s ease-in-out infinite;
       }
 
-      /* Efeito de "fantasma flutuante" com transição suave */
-      @keyframes ghostFluorescent {
-        0% {
-          opacity: 0.4;
-          text-shadow: 0 0 10px #a8a8a8, 0 0 20px #a8a8a8, 0 0 30px #a8a8a8;
-          transform: translateY(0);
-        }
-        25% {
-          opacity: 0.6;
-          text-shadow: 0 0 20px #a8a8a8, 0 0 40px #a8a8a8, 0 0 60px #a8a8a8;
-          transform: translateY(-5px);
-        }
-        50% {
-          opacity: 0.8;
-          text-shadow: 0 0 30px #a8a8a8, 0 0 60px #a8a8a8, 0 0 90px #a8a8a8;
-          transform: translateY(0);
-        }
-        75% {
-          opacity: 0.6;
-          text-shadow: 0 0 20px #a8a8a8, 0 0 40px #a8a8a8, 0 0 60px #a8a8a8;
-          transform: translateY(5px);
-        }
-        100% {
-          opacity: 0.4;
-          text-shadow: 0 0 10px #a8a8a8, 0 0 20px #a8a8a8, 0 0 30px #a8a8a8;
-          transform: translateY(0);
-        }
-      }
       body {
         background-color: black;
       }
